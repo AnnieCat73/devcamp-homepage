@@ -1,0 +1,142 @@
+/* Common styles */
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Side contact */
+
+.logo img {
+  width: 12rem;
+  height: 11rem;
+  margin-bottom: 2rem;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 4rem;
+}
+
+.address {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.address i,
+.phone i,
+.time i {
+  align-self: center;
+  font-size: 1.3rem;
+  color: goldenrod;
+}
+
+.address-text {
+  display: grid;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.address-text span {
+  justify-self: right;
+}
+
+.phone {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.phone-no {
+  font-weight: bold;
+}
+
+.time {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.time-hours {
+  font-weight: bold;
+}
+
+/* Form */
+
+.form-group input {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 5rem;
+  outline: none;
+  border: none;
+  border-bottom: solid 3px #333;
+  border-radius: 2px;
+  padding-left: 2rem;
+}
+
+.form-group textarea {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 20rem;
+  border: solid 3px #333;
+  margin-top: 3rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.contact-form label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  color: #cea135;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mybtn {
+  width: 7rem;
+  background-color: darkgoldenrod;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+@media (max-width: 615px) {
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .logo img {
+    align-self: center;
+    width: 100%;
+    height: 11rem;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+  }
+}
